@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1 id="title">Login Page</h1>
-    <p id="description">Please fill in the details below to log in:</p>
+    <p class="title" id="description">Please fill in the details below to log in:</p>
 
     <form id="login-form">
       <div class="group">
@@ -24,15 +24,17 @@
         </label>
       </div>
       <div class="group">
-        <p>Remember me</p>
+<label>
+          <input class="checkbox" type="checkbox" value="remember">Remember me
+        </label>
         <label>
-          <input type="checkbox" value="remember"> Keep me logged in
+          <input class="checkbox" type="checkbox" value="remember"> Keep me logged in
         </label>
       </div>
       <div class="group">
         <button type="submit" id="submit">Login</button>
       </div>
-      <p>Don't have an account? <a href="#">Sign up</a></p>
+      <p class="up">Don't have an account? <a href="#">Sign up</a></p>
     </form>
   </body>
 </html>
