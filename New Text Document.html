@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">My First Code</h1>
+    <p id="description">Please fill the next</p>
+
+    <form id="survey-form">
+      <div class="group">
+        <label id="name-label">Name
+          <input placeholder="Enter your name" id="name" required>
+        </label>
+      </div>
+      <div class="group">
+        <label id="email-label">Email
+          <input placeholder="Enter your email" required id="email" type="email">
+        </label>
+      </div>
+      <div class="group">
+        <label id="number-label">Age
+          <input placeholder="Enter your age" required id="number" type="number" max="120" min="12">
+        </label>
+      </div>
+      <div class="group">
+        <p>A, B, or C</p>
+        <select id="dropdown">
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+        </select>
+      </div>
+      <p>Choose</p>
+      <div class="group">
+        <label>
+          <input name="choice" type="radio" value="1" checked> 1
+        </label>
+        <label>
+          <input name="choice" type="radio" value="2"> 2
+        </label>
+        <label>
+          <input name="choice" type="radio" value="3"> 3
+        </label>
+        <label>
+          <input name="choice" type="radio" value="4"> 4
+        </label>
+      </div>
+      <p>Again</p>
+      <div class="group">
+        <label>
+          <input type="checkbox" value="1"> 1
+        </label>
+      </div>
+      <div class="group">
+        <label>
+          <input type="checkbox" value="2"> 2
+        </label>
+      </div>
+      <p>Bio</p>
+      <div class="group">
+        <textarea placeholder="Tell us about yourself"></textarea>
+      </div>
+      <div class="group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
