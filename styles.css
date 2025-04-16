@@ -3,11 +3,11 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
-  color: var(--color-white);
+  color: rgb(25, 23, 23);
   margin: 0;
   padding: 20px;
-  background: linear-gradient(135deg, #6e7f80, #2f353b);
-  content: '';
+  background-image: url('https://images.unsplash.com/photo-1672343246306-cb1467a33140?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -20,12 +20,25 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 400px;
-  margin: auto;
-  background-color: #fff;
-  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #977fa1;
+  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(104, 28, 186, 0.327);
+  z-index: -1;
 }
 
 input, select, textarea {
@@ -33,20 +46,14 @@ input, select, textarea {
   padding: 0.8rem;
   margin-bottom: 1rem;
   border-radius: 8px;
-  border: 2px solid #ccc;
-  background-color: #f1f1f1;
+  border: 2px solid rgb(125, 24, 172);
+  background-color: #dfd4e4;
   font-size: 1rem;
 }
 
-input:focus, select:focus, textarea:focus {
-  border-color: #4caf50;
-  outline: none;
-  background-color: #e8f5e9;
-}
-
 button {
-  background-color: #4caf50;
-  color: white;
+  background-color: #d2c9d6;
+  color: rgb(145, 120, 120);
   padding: 1rem;
   border-radius: 8px;
   border: none;
@@ -56,32 +63,39 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
-  transform: translateY(-2px);
+  background-color: #30124c37;
+  transform: translateY(-3px);
+  color: white;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  color: #333;
+  color: rgb(226, 220, 220);
   margin-bottom: 1.5rem;
 }
 
 label {
   font-size: 1.125rem;
   font-weight: 500;
-  color: #333;
+  color: rgb(10, 9, 9);
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  form {
-    padding: 1.5rem;
-    max-width: 100%;
-  }
+.checkbox{width: 29%;
 }
+
+p {
+  color: rgb(255, 249, 249);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.up{color: black;}
+input:focus,select:focus,textarea:focus {
+  border-color: #000000;
+  outline: none;
+  background-color: #8f76a7;
+  transition: all 0.3s ease;
+  }
