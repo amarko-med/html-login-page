@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="title">My First Code</h1>
-    <p id="description">Please fill the next</p>
+    <h1 id="title">Login Page</h1>
+    <p id="description">Please fill in the details below to log in:</p>
 
-    <form id="survey-form">
+    <form id="login-form">
       <div class="group">
         <label id="name-label">Name
           <input placeholder="Enter your name" id="name" required>
@@ -19,51 +19,20 @@
         </label>
       </div>
       <div class="group">
-        <label id="number-label">Age
-          <input placeholder="Enter your age" required id="number" type="number" max="120" min="12">
+        <label id="password-label">Password
+          <input placeholder="Enter your password" required id="password" type="password">
         </label>
       </div>
       <div class="group">
-        <p>A, B, or C</p>
-        <select id="dropdown">
-          <option>A</option>
-          <option>B</option>
-          <option>C</option>
-        </select>
-      </div>
-      <p>Choose</p>
-      <div class="group">
+        <p>Remember me</p>
         <label>
-          <input name="choice" type="radio" value="1" checked> 1
-        </label>
-        <label>
-          <input name="choice" type="radio" value="2"> 2
-        </label>
-        <label>
-          <input name="choice" type="radio" value="3"> 3
-        </label>
-        <label>
-          <input name="choice" type="radio" value="4"> 4
-        </label>
-      </div>
-      <p>Again</p>
-      <div class="group">
-        <label>
-          <input type="checkbox" value="1"> 1
+          <input type="checkbox" value="remember"> Keep me logged in
         </label>
       </div>
       <div class="group">
-        <label>
-          <input type="checkbox" value="2"> 2
-        </label>
+        <button type="submit" id="submit">Login</button>
       </div>
-      <p>Bio</p>
-      <div class="group">
-        <textarea placeholder="Tell us about yourself"></textarea>
-      </div>
-      <div class="group">
-        <button type="submit" id="submit">Submit</button>
-      </div>
+      <p>Don't have an account? <a href="#">Sign up</a></p>
     </form>
   </body>
 </html>
