@@ -1,69 +1,93 @@
-💻 Simple Login & Dashboard Web App
+<h1 align="center">💻 Simple Login & Dashboard Web App</h1>
 
-A modern and responsive login page with light/dark mode toggle, basic form validation, and a simulated dashboard greeting the user upon successful login.
+<p align="center">
+  <a href="https://amarko-med.github.io/html-login-page/">
+    <img src="https://img.shields.io/badge/Live%20Preview-Click%20Here-purple?style=for-the-badge">
+  </a>
+  <a href="https://github.com/amarko-med">
+    <img src="https://img.shields.io/badge/By-MED%20Amarko-blueviolet?style=for-the-badge">
+  </a>
+</p>
 
-🔗 Live Preview
+<p align="center">
+  A responsive login interface with light/dark mode toggle, basic validation, and a personalized dashboard greeting.
+</p>
 
-🚀 Features
+---
 
-✅ Responsive login form with validation (name, email, password)
+<h2>✨ Features</h2>
 
-🔒 Password show/hide toggle for usability
+<ul>
+  <li>Responsive login form with name, email & password</li>
+  <li>Password show/hide functionality</li>
+  <li>Light/Dark mode toggle with transitions</li>
+  <li>"Remember me" feature via localStorage</li>
+  <li>Fake authentication using demo credentials</li>
+  <li>Dashboard with personalized greeting</li>
+  <li>Logout button clears data and returns to login</li>
+</ul>
 
-🌙 Light/Dark mode toggle with smooth transitions
+---
 
-📌 "Remember me" option that stores name in local storage
+<h2>🔗 Live Preview</h2>
 
-🧪 Fake authentication using preset demo credentials
+<p>
+👉 <a href="https://amarko-med.github.io/html-login-page/" target="_blank"><strong>Click here to try it live</strong></a>
+</p>
 
-🧑 Personalized dashboard with greeting after login
+---
 
-🔓 Logout functionality that clears local storage and redirects
+<h2>🧪 Demo Credentials</h2>
 
-✨ Clean and accessible UI with soft gradients and a professional look
-
-📸 Screenshots
-
-Add screenshots here 
-
-Login form (light and dark mode)
-
-Dashboard welcome screen
-
-
-
-🧪 Demo Credentials
-
-Use the following to test the login:
-
+<pre>
 Email: demo@test.com
 Password: 123456
+</pre>
 
-📂 Project Structure
+---
 
-├── index.html         # Login page
-├── dashboard.html     # Dashboard after login
-├── styles.css         # All styling and themes
-├── script.js          # Form handling and logic
-├── dashboard.js       # Dashboard logic and logout
+<h2>🛠️ Tech Stack</h2>
 
-⚙️ Setup Instructions
+<ul>
+  <li><strong>HTML5</strong></li>
+  <li><strong>CSS3</strong> – Gradient backgrounds, media queries</li>
+  <li><strong>JavaScript (Vanilla)</strong></li>
+</ul>
 
-Clone or download the repository.
+---
 
-Open index.html in your browser, or visit the Live Preview.
+<h2>📁 Project Structure</h2>
 
-Use the demo credentials to login.
+<pre>
+📦 html-login-page/
+├── index.html         → Login page
+├── dashboard.html     → Dashboard after login
+├── styles.css         → CSS & themes
+├── script.js          → Login logic & validation
+├── dashboard.js       → User greeting & logout
+</pre>
 
-📌 Notes
+---
 
-No backend, API, or database is used — this is a front-end only simulation.
+<h2>📌 Notes</h2>
 
-Dark mode state does not persist after reload.
+<ul>
+  <li>No backend or database is used — it’s front-end only</li>
+  <li>Theme does not persist on refresh</li>
+  <li>localStorage is used to simulate session</li>
+</ul>
 
-All data is handled client-side with localStorage.
+---
 
-📃 License
+<h2>✍️ Author</h2>
 
-This project is open source and free to use.
+<p>
+  <strong>MED Amarko</strong><br>
+  <a href="https://github.com/amarko-med">GitHub Profile</a>
+</p>
 
+---
+
+<h2>📃 License</h2>
+
+<p>MIT — free to use and modify for any purpose.</p>
