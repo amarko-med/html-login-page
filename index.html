@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <h1 id="title">Login Page</h1>
-    <p class="title" id="description">Please fill in the details below to log in:</p>
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
 
-    <form id="login-form">
+    <h1 id="title">Login Page</h1>
+    <p id="description">Please fill in the details below to log in:</p>
+
+    <form id="login-form" novalidate>
       <div class="group">
-        <label id="name-label">Name
-          <input placeholder="Enter your name" id="name" required>
-        </label>
+        <label for="name">Name</label>
+        <input placeholder="Enter your name" id="name" required />
+        <small class="error-msg" id="name-error"></small>
       </div>
+
       <div class="group">
-        <label id="email-label">Email
-          <input placeholder="Enter your email" required id="email" type="email">
-        </label>
+        <label for="email">Email</label>
+        <input placeholder="Enter your email" required id="email" type="email" />
+        <small class="error-msg" id="email-error"></small>
       </div>
+
       <div class="group">
-        <label id="password-label">Password
-          <input placeholder="Enter your password" required id="password" type="password">
-        </label>
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input placeholder="Enter your password" required id="password" type="password" />
+          <button type="button" id="togglePassword" aria-label="Show Password">Show</button>
+        </div>
+        <small class="error-msg" id="password-error"></small>
       </div>
-      <div class="group">
-<label>
-          <input class="checkbox" type="checkbox" value="remember">Remember me
+
+      <div class="group checkboxes">
+        <label>
+          <input class="checkbox" type="checkbox" id="remember" /> Remember me
         </label>
         <label>
-          <input class="checkbox" type="checkbox" value="remember"> Keep me logged in
+          <input class="checkbox" type="checkbox" /> Keep me logged in
         </label>
       </div>
+
       <div class="group">
         <button type="submit" id="submit">Login</button>
       </div>
+
       <p class="up">Don't have an account? <a href="#">Sign up</a></p>
     </form>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
+
