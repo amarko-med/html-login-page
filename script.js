@@ -2,18 +2,22 @@
 const themeToggleBtn = document.getElementById("theme-toggle");
 themeToggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
+  localStorage.setItem(
+    "theme",
+    document.body.classList.contains("dark") ? "dark" : "light"
+  );
 });
 
 // Password Show/Hide
-document.getElementById("togglePassword").addEventListener("click", () => {
+const togglePasswordBtn = document.getElementById("togglePassword");
+togglePasswordBtn.addEventListener("click", () => {
   const pwd = document.getElementById("password");
-  const btn = document.getElementById("togglePassword");
   if (pwd.type === "password") {
     pwd.type = "text";
-    btn.textContent = "Hide";
+    togglePasswordBtn.textContent = "Hide";
   } else {
     pwd.type = "password";
-    btn.textContent = "Show";
+    togglePasswordBtn.textContent = "Show";
   }
 });
 
@@ -24,13 +28,17 @@ window.onload = () => {
     document.getElementById("name").value = savedName;
     document.getElementById("remember").checked = true;
   }
+
+  // Apply saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+  }
 };
 
 // Form validation & fake login
 document.getElementById("login-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Clear previous errors
   ["name-error", "email-error", "password-error"].forEach((id) => {
     document.getElementById(id).textContent = "";
   });
@@ -42,12 +50,12 @@ document.getElementById("login-form").addEventListener("submit", (e) => {
 
   let valid = true;
 
-  if (name === "") {
+  if (!name) {
     document.getElementById("name-error").textContent = "Name is required.";
     valid = false;
   }
 
-  if (email === "") {
+  if (!email) {
     document.getElementById("email-error").textContent = "Email is required.";
     valid = false;
   } else if (!email.includes("@")) {
@@ -62,7 +70,6 @@ document.getElementById("login-form").addEventListener("submit", (e) => {
 
   if (!valid) return;
 
-  // Remember me functionality
   if (remember) {
     localStorage.setItem("name", name);
   } else {
@@ -71,7 +78,6 @@ document.getElementById("login-form").addEventListener("submit", (e) => {
 
   // Fake login check
   if (email === "demo@test.com" && password === "123456") {
-    // Save username and redirect to dashboard
     localStorage.setItem("username", name);
     window.location.href = "dashboard.html";
   } else {
