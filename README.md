@@ -1,4 +1,4 @@
-# 💻 Einfache Login- & Dashboard-Web-App
+<h1 align="center">💻 Einfache Login- & Dashboard-Web-App</h1>
 
 <p align="center">
   <a href="https://amarko-med.github.io/html-login-page/">
@@ -10,6 +10,18 @@
 </p>
 
 Eine responsive Login-Oberfläche mit Light-/Dark-Mode-Umschaltung, grundlegender Validierung und personalisiertem Dashboard-Gruß.
+
+---
+
+<h2>📸 Screenshots</h2>
+
+<p>
+  <img src="Images/Screenshot%202025-10-25%20151948.png" alt="1" width="35%">
+  <img src="Images/Screenshot%202025-10-25%20151910.png" alt="2" width="49%">
+  <img src="Images/Screenshot%202025-10-25%20151800.png" alt="3" width="35%">
+  <img src="Images/Screenshot%202025-10-25%20151706.png" alt="4" width="45%">
+
+</p>
 
 ---
 
