@@ -16,10 +16,10 @@ Eine responsive Login-Oberfläche mit Light-/Dark-Mode-Umschaltung, grundlegende
 <h2>📸 Screenshots</h2>
 
 <p>
-  <img src="Images/Screenshot%202025-10-25%20151948.png" alt="1" width="35%">
-  <img src="Images/Screenshot%202025-10-25%20151910.png" alt="2" width="49%">
-  <img src="Images/Screenshot%202025-10-25%20151800.png" alt="3" width="35%">
-  <img src="Images/Screenshot%202025-10-25%20151706.png" alt="4" width="45%">
+  <img src="images/Screenshot%202025-10-25%20165206.png" alt="1" width="35%">
+  <img src="images/Screenshot%202025-10-25%20165350.png" alt="2" width="35%">
+  <img src="images/Screenshot%202025-10-25%20165424.png" alt="3" width="35%">
+  <img src="images/Screenshot%202025-10-25%20165716.png" alt="4" width="35%">
 
 </p>
 
