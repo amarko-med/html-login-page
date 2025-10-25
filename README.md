@@ -1,93 +1,79 @@
-<h1 align="center">💻 Simple Login & Dashboard Web App</h1>
+# 💻 Einfache Login- & Dashboard-Web-App
 
 <p align="center">
   <a href="https://amarko-med.github.io/html-login-page/">
-    <img src="https://img.shields.io/badge/Live%20Preview-Click%20Here-purple?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Live%20Vorschau-Klicke%20Hier-purple?style=for-the-badge">
   </a>
   <a href="https://github.com/amarko-med">
-    <img src="https://img.shields.io/badge/By-MED%20Amarko-blueviolet?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Von-MED%20Amarko-blueviolet?style=for-the-badge">
   </a>
 </p>
 
-<p align="center">
-  A responsive login interface with light/dark mode toggle, basic validation, and a personalized dashboard greeting.
-</p>
+Eine responsive Login-Oberfläche mit Light-/Dark-Mode-Umschaltung, grundlegender Validierung und personalisiertem Dashboard-Gruß.
 
 ---
 
-<h2>✨ Features</h2>
+## ✨ Funktionen
 
-<ul>
-  <li>Responsive login form with name, email & password</li>
-  <li>Password show/hide functionality</li>
-  <li>Light/Dark mode toggle with transitions</li>
-  <li>"Remember me" feature via localStorage</li>
-  <li>Fake authentication using demo credentials</li>
-  <li>Dashboard with personalized greeting</li>
-  <li>Logout button clears data and returns to login</li>
-</ul>
+* Responsives Login-Formular mit Name, E-Mail & Passwort
+* Passwort-Anzeige/-Verbergen Funktion
+* Light/Dark-Mode-Umschaltung mit sanften Übergängen
+* "Remember me"-Funktion über localStorage
+* Fake-Authentifizierung mit Demo-Zugangsdaten
+* Dashboard mit personalisiertem Gruß
+* Logout-Button löscht Daten und kehrt zum Login zurück
 
 ---
 
-<h2>🔗 Live Preview</h2>
+## 🔗 Live Vorschau
 
-<p>
-👉 <a href="https://amarko-med.github.io/html-login-page/" target="_blank"><strong>Click here to try it live</strong></a>
-</p>
+[👉 Hier klicken, um es live zu testen](https://amarko-med.github.io/html-login-page/)
 
 ---
 
-<h2>🧪 Demo Credentials</h2>
+## 🧪 Demo-Zugangsdaten
+
+* E-Mail: demo@test.com
+* Passwort: 123456
+
+---
+
+## 🛠️ Technologiestack
+
+- **HTML5**
+- **CSS3** – Gradient-Hintergründe, Media Queries
+- **JavaScript (Vanilla)**
+
+---
+
+## 📁 Projektstruktur
 
 <pre>
-Email: demo@test.com
-Password: 123456
+html-login-page/
+├── index.html         → Login-Seite
+├── dashboard.html     → Dashboard nach dem Login
+├── styles.css         → CSS & Themes
+├── script.js          → Login-Logik & Validierung
+├── dashboard.js       → Benutzergruß & Logout
+└── images/            → Screenshots
 </pre>
 
 ---
 
-<h2>🛠️ Tech Stack</h2>
+## 📌 Hinweise
 
-<ul>
-  <li><strong>HTML5</strong></li>
-  <li><strong>CSS3</strong> – Gradient backgrounds, media queries</li>
-  <li><strong>JavaScript (Vanilla)</strong></li>
-</ul>
+- Kein Backend oder Datenbank – nur Frontend
+- Theme wird beim Aktualisieren der Seite nicht beibehalten
+- localStorage wird verwendet, um eine Sitzung zu simulieren
 
 ---
 
-<h2>📁 Project Structure</h2>
+## 📩 Kontakt
 
-<pre>
-📦 html-login-page/
-├── index.html         → Login page
-├── dashboard.html     → Dashboard after login
-├── styles.css         → CSS & themes
-├── script.js          → Login logic & validation
-├── dashboard.js       → User greeting & logout
-</pre>
+##  E-Mail: [amarkouchi5@gmail.com](mailto:amarkouchi5@gmail.com)
 
 ---
 
-<h2>📌 Notes</h2>
+## 📃 Lizenz
 
-<ul>
-  <li>No backend or database is used — it’s front-end only</li>
-  <li>Theme does not persist on refresh</li>
-  <li>localStorage is used to simulate session</li>
-</ul>
-
----
-
-<h2>✍️ Author</h2>
-
-<p>
-  <strong>MED Amarko</strong><br>
-  <a href="https://github.com/amarko-med">GitHub Profile</a>
-</p>
-
----
-
-<h2>📃 License</h2>
-
-<p>MIT — free to use and modify for any purpose.</p>
+MIT – frei nutzbar und veränderbar für jeden Zweck.
